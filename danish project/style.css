@@ -273,12 +273,11 @@ position: relative;
 
 
 
-@media (max-width: 300px){
-    .logo{
+/* @media (max-width: 400px){
+    #sec-1 .logo{
         width: 100px;
-        
     }
-}
+} */
 
 @media (max-width: 1200px){
     #sec-2 .picture2{
@@ -293,13 +292,29 @@ position: relative;
     }
 }
 
-@media (max-width: 480px){
+@media (max-width: 550px){
     #sec-1 .heading-div span{
         font-size:  50px;
-        
+           
     }
     #sec-1 .heading-div{
-        margin-top: 40%;
+        margin-top: 50vh;
+    }
+    #sec-1 .logo{
+       margin-left: 38vh;
+       transition: all 1s linear;
+
+    }  
+}
+
+@media (max-width: 380px){
+    #sec-1 .logo{
+        margin-left: 22vh;
+    }
+}
+@media (max-width: 300px){
+    #sec-1 .logo{
+        margin-left: 9vh;
     }
 }
 
@@ -308,5 +323,13 @@ position: relative;
         margin-top: -37%;
         right: 19%;
         font-size: 30px;
+        transition: all 1s linear;
+    }
+
+    #sec-2 .picture2{
+        top: 8%;
+        left: -27%;
+        font-size: 30px;
+        transition: all 1s linear;
     }
 }

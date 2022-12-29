@@ -290,13 +290,20 @@ position: relative;
     #heading{
         font-size: 50px;
     }
+    #sec-2 .picture2{
+        top: 4%;
+        left: -35%;
+        font-size: 30px;
+        transition: all 1s linear;
+    }
+
 }
 
 @media (max-width: 550px){
     #sec-1 .heading-div span{
-        font-size:  50px;
-           
+        font-size:  50px;      
     }
+    
     #sec-1 .heading-div{
         margin-top: 50vh;
     }
@@ -305,6 +312,12 @@ position: relative;
        transition: all 1s linear;
 
     }  
+}
+
+@media (max-width: 1000px){
+    #sec-2 .sub3{
+        margin-top: -4vh;
+    }
 }
 
 @media (max-width: 380px){

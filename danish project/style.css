@@ -106,12 +106,14 @@ html{
     
 }
 #sec-2 .picture2{
-    width: 15vw;
+    width: 12vw;
     height: auto;
-    top: 65%;
-    left: -45%;
-    transition: all .3s;
-
+    z-index: 2;
+    position: absolute;
+    left: 7%;
+    margin-top: 18rem;
+   
+  
 }
 /* #sec-2:before,#sec-2:after{
     content: "";
@@ -152,7 +154,7 @@ html{
     color: #fff;
     width: 1020px;
     height: auto;
-    margin-top: -15px;
+    margin-top: 20px;
     z-index: 3;
     position: relative;
 
@@ -279,10 +281,32 @@ position: relative;
     }
 }
 
-@media (max-width: 1200px){
+@media (max-width: 700px){
     #sec-2 .picture2{
+        width: 9vw;
+        left: 31%;
+        margin-top: 0rem;
+        transition: all 1s linear;
+    }
+    #sec-2 .sub .sub3{
+        margin-top: 30px;
+    }
+}
 
-        left: -50%;
+@media (max-width: 550px){
+    #sec-2 .picture2{
+        width: 9vw;
+        left: 25%;
+        margin-top: 1rem;
+        transition: all 1s linear;
+    }
+}
+@media (max-width: 350px){
+    #sec-2 .picture2{
+        width: 11vw;
+        left: 15%;
+        margin-top: 1rem;
+        transition: all 1s linear;
     }
 }
 
@@ -290,13 +314,7 @@ position: relative;
     #heading{
         font-size: 50px;
     }
-    #sec-2 .picture2{
-        top: 4%;
-        left: -35%;
-        font-size: 30px;
-        transition: all 1s linear;
-    }
-
+   
 }
 
 @media (max-width: 550px){
@@ -310,10 +328,14 @@ position: relative;
       
 }
 
-@media (max-width: 1000px){
-    #sec-2 .sub3{
-        margin-top: -1%;
+
+
+@media (max-width: 450px){
+    
+    #sec-1 .heading-div span{
+        font-size:  40px;      
     }
+
 }
 
 
@@ -326,10 +348,4 @@ position: relative;
         transition: all 1s linear;
     }
 
-    #sec-2 .picture2{
-        top: 8%;
-        left: -27%;
-        font-size: 30px;
-        transition: all 1s linear;
-    }
 }

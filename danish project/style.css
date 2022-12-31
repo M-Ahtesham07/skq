@@ -66,25 +66,31 @@ html{
 
 
 
-#sec-1:before,#sec-1:after{
- content: "";
- position: absolute;
- left: 0;
- right: 0;
- bottom: 25px;
- height: 50px;
- background: radial-gradient(closest-side,#a13c02,#a13c02 50%, transparent 50%);
- background-size: 50px 50px;
- background-position: 0 25px;
- background-repeat: repeat-x;
-}
-#sec-1:after{
-    background: radial-gradient(closest-side,transparent,transparent 50%,#a13c02 50%);
-    background-size: 50px 50px;
-    background-position: 25px -25px;
-    background-repeat: repeat-x;
-    bottom: -25px;
-}
+#sec-1::before, #sec-1::after{
+    border-bottom: 5px solid #a13c02;
+  }
+  #sec-1::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 29px;
+    background-size: 20px 40px;
+    background-image:
+      radial-gradient(circle at 10px -15px, transparent 20px, #a13c02 21px);
+  }
+  #sec-1::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 35px;
+    background-size: 40px 40px;
+    background-image:
+      radial-gradient(circle at 10px 26px, #a13c02 20px, transparent 21px);
+  }
 
 .logo{
     width: 200px;
@@ -97,8 +103,34 @@ html{
     text-align: center;
     padding-bottom: 80px;
     padding-top: 50px;
+    position: relative;
  
 }
+#sec-2::before, #sec-2::after{
+    border-bottom: 5px solid #fdc203;
+  }
+  #sec-2::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 29px;
+    background-size: 20px 40px;
+    background-image:
+      radial-gradient(circle at 10px -15px, transparent 20px, #fdc203 21px);
+  }
+  #sec-2::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 35px;
+    background-size: 40px 40px;
+    background-image:
+      radial-gradient(circle at 10px 26px, #fdc203 20px, transparent 21px);
+  }
 #sec-2 .picture{
     width: 25vw;
     height: auto;
@@ -115,27 +147,7 @@ html{
    
   
 }
-/* #sec-2:before,#sec-2:after{
-    content: "";
-    position: absolute;
-    z-index: 50;
-    left: 0;
-    right: 0;
-    top: 24%;
-    height: 50px;
-    background: radial-gradient(closest-side,#fdc203,#fdc203 50%, transparent 50%);
-    background-size: 50px 50px;
-    background-position: 0 25px;
-    background-repeat: repeat-x;
-   }
-#sec-2:after{
-     background: radial-gradient(closest-side,transparent,transparent 50%,#fdc203 50%);
-     background-size: 50px 50px;
-     background-position: 25px -25px;
-     background-repeat: repeat-x;
-     top: 345%;
-    
-   } */
+
 .sub{
     padding-top: 50px;
     
@@ -171,7 +183,36 @@ html{
     justify-content: center;
     color: #fff;
     padding-bottom: 50px;
+    position: relative;
 }
+#sec-3::before, #sec-3::after{
+    border-bottom: 5px solid #fae7e1;
+  }
+  #sec-3::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 29px;
+    background-size: 20px 40px;
+    background-image:
+      radial-gradient(circle at 10px -15px, transparent 20px, #fae7e1 21px);
+  }
+  #sec-3::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 35px;
+    background-size: 40px 40px;
+    background-image:
+      radial-gradient(circle at 10px 26px, #fae7e1 20px, transparent 21px);
+  }
+
+
+
 
 .block{
     text-align: center;
